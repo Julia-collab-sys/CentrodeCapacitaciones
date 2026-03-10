@@ -116,6 +116,20 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.15);
         }
 
+        .galeria{
+         margin-top:15px;
+         display:flex;
+         gap:10px;
+         flex-wrap:wrap;
+        }
+
+        .galeria img{
+            width:200px;
+            height:200px;
+            object-fit:cover;
+            border-radius:8px;
+        }
+
     @media (max-width: 600px) {
           .tarjeta {
             flex-direction: column;
@@ -136,33 +150,36 @@
 <body>
 
     
-  <section class="hero">
-    <h2>Centro de Capacitaciones Municipales</h2>
-    <p>Espacios de formación gratuita para toda la comunidad</p>
-</section>
-
-
-    <div class="contenedor">
-
-
-        <div class="tarjeta">
-            <img src="imagenes/mechongue.jpeg" alt="Cursos en Mechongué">
-            <div>
-                <h2>Mechongue</h2>
-                <p></p>
-                 <ul>
-                    <li>📌 Taller de Envíon de informática: jueves desde las 18:30</li>
-                    <li>📌 Envíon: viernes desde las 10 — inscripciones y taller</li>
-                    <li>📌 Adultos Mayores: lunes, jueves y viernes (uso de celulares y PC)</li>
-                    <li>📌 De lunes a viernes de 7 a 13 hs: espacio abierto para uso de computadoras</li>
-                    <li>📌 Talleres de la Universidad de Ciencias Agrarias realizados en 2024</li>
-                  </ul>
-            </div>
-        </div>
-
-   
-
-    </div>
+        <section class="hero">
+          <h2>Centro de Capacitaciones Municipales</h2>
+          <p>Espacios de formación gratuita para toda la comunidad</p>
+      </section>
+      
+          <div class="contenedor">
+      
+          <div class="tarjeta">
+      
+          <div>
+              <h2>Mechongue</h2>
+      
+              <ul>
+                  <li>📌 Taller de informática: jueves desde las 18:30</li>
+                  <li>📌 Envíon: viernes desde las 10</li>
+                  <li>📌 Adultos Mayores: lunes, jueves y viernes</li>
+              </ul>
+      
+              <div class="galeria">
+                 <img src="imagenes/mechongue.jpeg">
+                  <img src="imagenes/mechongue1.jpeg">
+                  <img src="imagenes/mechongue2.jpeg">
+                  <img src="imagenes/mechongue3.jpeg">
+                  <img src="imagenes/mechongue4.jpeg">
+                   <img src="imagenes/mechongue5.jpeg">
+              </div>
+      
+          </div>
+      
+      </div>
 
 
 
@@ -177,3 +194,4 @@
 
 </body>
 </html>
+
