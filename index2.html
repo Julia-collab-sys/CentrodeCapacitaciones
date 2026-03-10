@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página con Tarjetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        body {
+             background: linear-gradient(
+                to bottom,
+                #3b7db6 0%,   /* azul institucional */
+                #4fa3b6 45%,  /* transición suave */
+                #5fb37a 100%  /* verde municipal */
+              );
+             color: #1f2933;
+             line-height: 1.6;
+             font-family: "Segoe UI", Roboto, Arial, sans-serif;
+             margin: 0;
+        }
+
+         /* HEADER */
+         header {
+             background: linear-gradient(
+              to right,
+              #3b6fa6,   /* azul oscuro */
+              #4f9fb0,   /* azul medio */
+              #5fb37a    /* verde */
+         );
+             color: #279CF5;
+             height: 70px;
+             padding: 0 1.5rem;
+         
+             display: flex;
+             align-items: center;
+             gap: 1rem;
+         
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+             border-bottom-left-radius: 16px;
+             border-bottom-right-radius: 16px;
+         }
+
+             
+             .hero {
+             background: rgba(255, 255, 255, 0.85);
+             border-radius: 16px;
+             margin: 1.5rem auto;
+             max-width: 900px;
+         }
+ 
+           .hero {  
+            
+             background-size: cover;        
+             background-position: center;  
+             background-repeat: no-repeat;
+             min-height: 20vh;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             text-align: center;
+             color: black;
+             padding: 2rem;
+
+         }
+
+              .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contenedor {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .tarjeta {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .tarjeta img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .tarjeta h2 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .tarjeta p {
+            margin: 0;
+            color: #666;
+        }
+
+
+        .tarjeta {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+         }
+
+        .tarjeta:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+    @media (max-width: 600px) {
+          .tarjeta {
+            flex-direction: column;
+            text-align: center;
+         }
+
+    .tarjeta img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+      
+    </style>
+</head>
+<body>
+
+    
+  <section class="hero">
+    <h2>Centro de Capacitaciones Municipales</h2>
+    <p>Espacios de formación gratuita para toda la comunidad</p>
+</section>
+
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <img src="imagenes/Otamendi.jpeg" alt="Cursos en Otamendi">
+            <div>
+                <h2>Otamendi</h2>
+                <p>El Punto Digital General Alvarado 2 es un espacio público y gratuito</p>                  
+             <ul>
+                <li>📌 Navegación libre</li>
+                <li>📌 Asistencia en trámites digitales</li>
+                <li>📌 Validación Mi Argentina</li>
+                <li>📌 Acompañamiento en cursos virtuales</li>
+             </ul>
+
+              <h3>🚀 Propuestas para 2026</h3>
+            <ul>
+                <li>📌 Alfabetización digital</li>
+                <li>📌 Excel práctico</li>
+                <li>📌 Talleres de IA</li>
+                <li>📌 Programación web</li>
+             </ul>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="imagenes/mechongue.jpeg" alt="Cursos en Mechongué">
+            <div>
+                <h2>Mechongue</h2>
+                <p></p>
+                 <ul>
+                    <li>📌 Taller de Envíon de informática: jueves desde las 18:30</li>
+                    <li>📌 Envíon: viernes desde las 10 — inscripciones y taller</li>
+                    <li>📌 Adultos Mayores: lunes, jueves y viernes (uso de celulares y PC)</li>
+                    <li>📌 De lunes a viernes de 7 a 13 hs: espacio abierto para uso de computadoras</li>
+                    <li>📌 Talleres de la Universidad de Ciencias Agrarias realizados en 2024</li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+              <img src="imagenes/parque.jpeg" alt="Cursos en Aeroparque">
+            <div>
+                <h2>Aeroparque</h2>
+                <p></p>
+                 <ul>
+                     <li>📌Curso en sala de PC (Adultos y Adolescentes) </li>
+                     <li>📌Curso en sala de PC (Niños de 5 a 12 años)</li>
+                     <li>📌Micro-Cine en Vacaciones de Invierno </li>
+                 </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<footer style="
+    text-align:center;
+    padding:1rem;
+    color:#fff;
+    font-size:0.9rem;
+">
+    © Municipalidad de General Alvarado
+</footer>
+
+</body>
+</html>
