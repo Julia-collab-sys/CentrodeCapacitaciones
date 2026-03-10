@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página con Tarjetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+             background: linear-gradient(
+                to bottom,
+                #3b7db6 0%,   /* azul institucional */
+                #4fa3b6 45%,  /* transición suave */
+                #5fb37a 100%  /* verde municipal */
+              );
+             color: #1f2933;
+             line-height: 1.6;
+             font-family: "Segoe UI", Roboto, Arial, sans-serif;
+             margin: 0;
+        }
+
+         /* HEADER */
+         header {
+             background: linear-gradient(
+              to right,
+              #3b6fa6,   /* azul oscuro */
+              #4f9fb0,   /* azul medio */
+              #5fb37a    /* verde */
+         );
+             color: #279CF5;
+             height: 70px;
+             padding: 0 1.5rem;
+         
+             display: flex;
+             align-items: center;
+             gap: 1rem;
+         
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+             border-bottom-left-radius: 16px;
+             border-bottom-right-radius: 16px;
+         }
+
+             
+             .hero {
+             background: rgba(255, 255, 255, 0.85);
+             border-radius: 16px;
+             margin: 1.5rem auto;
+             max-width: 900px;
+         }
+ 
+           .hero {  
+            
+             background-size: cover;        
+             background-position: center;  
+             background-repeat: no-repeat;
+             min-height: 20vh;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             text-align: center;
+             color: black;
+             padding: 2rem;
+
+         }
+
+              .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contenedor {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .contenido{
+    display:flex;
+    flex-direction: column;
+}
+
+        .tarjeta {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .tarjeta img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .tarjeta h2 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .tarjeta p {
+            margin: 10px;
+            color: #666;
+            text-align: center;
+        }
+
+
+        .tarjeta {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+         }
+
+        .tarjeta:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+    @media (max-width: 600px) {
+          .tarjeta {
+            flex-direction: column;
+            text-align: center;
+         }
+
+    .tarjeta img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+      
+    </style>
+</head>
+
+
+
+
+<body>
+
+    
+  <section class="hero">
+    <h2>Centro de Capacitaciones Municipales</h2>
+    <p>Comandante Nicanor Otamendi - Centro Cultural</p>
+</section>
+
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+        
+            <div class="contenido">
+                <h2>Punto Digital General Alvarado 2</h2>
+
+            <p> El Punto Digital General Alvarado 2, ubicado en el Centro Cultural de Comandante Nicanor Otamendi, es un espacio público y gratuito pensado para acercar la tecnología, la capacitación y el acceso a trámites digitales a toda la comunidad.
+
+             A lo largo del año, el Punto Digital funciona como un lugar de encuentro, aprendizaje y acompañamiento, donde personas de todas las edades pueden formarse, resolver trámites y utilizar herramientas digitales de manera práctica y sencilla. </p>  
+
+             <h2>Lo que hicimos durante 2025</h2>
+             <p>Durante el año 2025 se desarrollaron múltiples actividades en articulación con distintas instituciones locales</p>
+              <ul>
+                <li>🎬 Centro Cultural: se realizaron proyecciones infantiles y familiares durante las vacaciones de invierno.</li>
+                <li>🎨 CENS: se dictaron mini talleres sobre el uso de Canva para diseño básico.</li>
+                <li>🏫 Escuela N° 502: se llevaron adelante talleres de ofimática, uso práctico de la PC y navegación por Internet.</li>
+                <li>🛠️ Centro de Formación Laboral: se ofrecieron cursos de Diseño Gráfico, Operador de PC, Programación básica, entre otros.</li>
+                <li>🤝 Programa Envión: se brindó el espacio de capacitación para la realización de tareas escolares.</li>
+             </ul>
+
+             <p>Además, desde el Punto Digital se dictó un curso anual para adultos mayores sobre el uso de celular y computadoras, que tuvo una excelente participación y continuidad durante todo el año</p>
+
+            <ul>
+                <li>📌 Un taller de uso de hojas de cálculo</li>
+                <li>📌 Una charla introductoria sobre Inteligencia Artificial </li>
+                <li>📌 Servicios y actividades permanentes</li>
+             </ul>
+
+                 <p>El Punto Digital ofrece de forma continua</p>
+
+             <ul>
+                <li>📌 Navegación libre</li>
+                <li>📌 Asistencia en trámites digitales</li>
+                <li>📌 Validación Mi Argentina</li>
+                <li>📌 Acompañamiento en cursos virtuales</li>
+             </ul>
+
+              <h3>🚀 Propuestas para 2026</h3>
+            <ul>
+                <li>📌 Alfabetización digital</li>
+                <li>📌 Excel práctico</li>
+                <li>📌 Talleres de IA</li>
+                <li>📌 Programación web</li>
+             </ul> 
+
+             <p>El Punto Digital General Alvarado 2 es un espacio abierto a toda la comunidad, donde la tecnología se transforma en una herramienta de inclusión, aprendizaje y portunidades.
+ 
+            👉 Te esperamos para aprender, crear y resolver tus trámites digitales en un ambiente accesible y acompañado.</p>
+            </div>
+          
+        </div>
+
+
+</body>
+  
